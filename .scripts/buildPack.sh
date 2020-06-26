@@ -29,7 +29,8 @@ function download_file {
     if [ "$2" ]; then
         progress_flag='-#'
     else
-        progress_flag='-s'
+        #progress_flag='-s'
+        progress_flag='-#'
     fi
     echo "$download_url"
     curl -O -J -L --globoff --compressed $progress_flag "$download_url" || (echo "Failed to download $download_url" && exit 1)
@@ -84,7 +85,7 @@ function install_mods {
     echo 'Downloading mods'
     pushd "mods" > /dev/null
     export -f download_file
-    echo ${url_download_list[@]} | xargs -n 1 -P 8 -I {} -d ' ' bash -c 'download_file "{}" true && printf '.''
+    echo ${url_download_list[@]} | xargs -n 1 -P 8 -I {} -d ' ' bash -c 'download_file "{}" && printf '.''
     printf 'Finished url mods\n'
     popd > /dev/null
 }
