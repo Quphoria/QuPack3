@@ -32,8 +32,9 @@ function download_file {
         #progress_flag='-s'
         progress_flag='-#'
     fi
-    echo "S$download_url"
+    echo "D$download_url"
     curl -O -J -L --globoff --compressed $progress_flag "$download_url" || (echo "Failed to download $download_url" && exit 1)
+    echo "downloaded $download_url"
 }
 
 function install_curse_mods {
