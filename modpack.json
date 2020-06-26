@@ -2,8 +2,8 @@
     "forgeVersion":"1.12.2-14.23.5.2854",
     "mods":{
         "urls":[
-            {"url": "https://www.curseforge.com/minecraft/mc-mods/chameleon/download/2450900"},
-            {"url": "https://www.curseforge.com/minecraft/mc-mods/storage-drawers/download/2952606"}
+            {"url": "https://micdoodle8.com/new-builds/GC-1.12/280/MicdoodleCore-1.12.2-4.0.2.280.jar"},
+            {"url": "https://micdoodle8.com/new-builds/GC-1.12/280/GalacticraftCore-1.12.2-4.0.2.280.jar"}
         ],
         "curse":[
             {   
@@ -20,6 +20,31 @@
                 "name": "JourneyMap",
                 "projectId":"32274",
                 "fileId": "2916002"
+            },
+            {
+                "name": "Chameleon",
+                "projectId":"230497",
+                "fileId": "2450900"
+            },
+            {
+                "name": "Storage Drawers",
+                "projectId":"223852",
+                "fileId": "2952606"
+            },
+            {
+                "name": "Applied Energistics 2",
+                "projectId":"223794",
+                "fileId": "2747063"
+            },
+            {
+                "name": "Ender IO",
+                "projectId":"64578",
+                "fileId": "2989201"
+            },
+            {
+                "name": "Ender IO Endergy",
+                "projectId":"304346",
+                "fileId": "2989200"
             }
         ]    
     }
