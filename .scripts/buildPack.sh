@@ -32,7 +32,7 @@ function download_file {
         #progress_flag='-s'
         progress_flag='-#'
     fi
-    echo "$download_url"
+    echo "S$download_url"
     curl -O -J -L --globoff --compressed $progress_flag "$download_url" || (echo "Failed to download $download_url" && exit 1)
 }
 
