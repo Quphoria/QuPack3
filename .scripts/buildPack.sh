@@ -32,8 +32,7 @@ function download_file {
         #progress_flag='-s'
         progress_flag='-#'
     fi
-    download_url=${download_url%$'\r'} # Remove \r from url
-    curl -O -J -L --globoff --compressed $progress_flag "$download_url" || (echo "Failed to download $download_url" && exit 1)
+    curl -O -J -L --globoff --compressed $progress_flag ${download_url//[$'\t\r\n']}" || (echo "Failed to download $download_url" && exit 1)
 }
 
 function install_curse_mods {
