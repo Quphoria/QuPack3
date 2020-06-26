@@ -83,7 +83,7 @@ function install_mods {
     echo 'Downloading mods'
     pushd "mods" > /dev/null
     export -f download_file
-    echo ${url_download_list[@]} | xargs -n 1 -P 8 -I {} -d ' ' bash -c 'download_file "{}" && printf '.''
+    echo ${url_download_list[@]} | xargs -n 1 -P 8 -I {} -d ' ' bash -c 'download_file "{}" true && printf '.''
     printf 'Finished url mods\n'
     popd > /dev/null
 }
