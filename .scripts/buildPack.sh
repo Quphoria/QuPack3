@@ -29,8 +29,7 @@ function download_file {
     if [ "$2" ]; then
         progress_flag='-#'
     else
-        #progress_flag='-s'
-        progress_flag='-#'
+        progress_flag='-s'
     fi
     curl -O -J -L --globoff --compressed $progress_flag "${download_url//[$'\t\r\n']}" || (echo "Failed to download $download_url" && exit 1)
 }
