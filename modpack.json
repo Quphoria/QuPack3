@@ -37,6 +37,11 @@
                 "fileId": "2747063"
             },
             {
+                "name": "EnderCore",
+                "projectId":"231868",
+                "fileId": "2972849"
+            },
+            {
                 "name": "Ender IO",
                 "projectId":"64578",
                 "fileId": "2989201"
